@@ -144,7 +144,7 @@ def decode_message(message, root):
             n = root
     return decoded
 
-# Calculate the bit sizes
+# Calculate the size in bits
 def ascii_size(message):
     return len(message) * 8
 
@@ -180,8 +180,8 @@ def main():
     print("Bits saved:", ascii_bits - huffman_bits)
 
     memory_required = asizeof.asizeof(root)
-    print("Tree memory required (ascii):", memory_required * 8)
-    print("Tree memory required (huffman):", memory_required)
+    print("Bits required to store (ascii):", memory_required * 8)
+    print("Bits required to store (huffman):", memory_required)
 
     # Book test
     print("\nBook test")
