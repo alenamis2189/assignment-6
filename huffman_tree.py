@@ -93,7 +93,6 @@ def create_a_forest(frequencies):
 
 # Build a Huffman tree from the forest
 def huffman_algorithm(forest):
-  
     while len(forest) > 1:
         n1 = min(forest)
         forest.remove(n1)
